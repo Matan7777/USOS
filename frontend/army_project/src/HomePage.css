@@ -1,0 +1,62 @@
+/* עיצוב עמוד הבית */
+
+.homepage {
+    background: linear-gradient(135deg, #daedfd 0%, #c2e1ff 25%, #89c4fe 50%, #64affa 75%, #8fc5ff 100%);
+    width: 100vw;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+  }
+  
+  .homepage-content {
+    text-align: center;
+    max-width: 100vw;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* כותרת ותיאור */
+  .homepage-content h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #1e3a8a;
+  }
+  
+  .homepage-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  /* כפתורים ממורכזים */
+  .homepage-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* רווח בין הכפתורים */
+  }
+  
+  .styled-button {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 15px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .styled-button:hover {
+    background-color: #155081;
+    transform: scale(1.05);
+  }
+  
+  .styled-button:active {
+    transform: scale(0.98);
+  }
+  

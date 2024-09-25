@@ -1,0 +1,2 @@
+FLASK_APP=army_flask
+FLASK_ENV=development

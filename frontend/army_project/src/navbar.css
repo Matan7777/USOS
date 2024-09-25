@@ -1,0 +1,125 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 7vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center; /* ממקם את כל הפריטים במרכז אנכי */
+    z-index: 1000; /* מבטיח שה-navbar יהיה מעל תוכן אחר */
+}
+
+.name {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute; /* מאפשר מיקום יחסי לתוך ה-navbar */
+    left: 50%;
+    transform: translateX(-50%); /* ממקם בדיוק במרכז של ה-navbar */
+    font-size: 24px; 
+}
+
+.cart {
+    list-style-type: none;
+    filter: invert(100%) sepia(100%) saturate(0%) brightness(200%);
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.username {
+    color: white;
+    font-size: 16px;
+}
+
+.myfixed {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    right: 80px;
+}
+
+.logout-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    font-size: 15px;
+    border-radius: 4px;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #c0392b;
+}
+
+/* עבור מסכים קטנים יותר (למשל טלפונים ניידים) */
+@media screen and (max-width: 768px) {
+    .name {
+        font-size: 18px; 
+    }
+
+    .logout-button {
+        font-size: 12px; 
+        padding: 5px 10px; 
+    }
+
+    .username {
+        font-size: 14px; 
+    }
+
+    .myfixed {
+        gap: 15px; 
+    }
+
+    .cart img {
+        width: 20px;
+        height: 20px; 
+    }
+}
+
+/* עבור מסכים קטנים מאוד (למשל טלפונים ישנים יותר או מסכים קטנים במיוחד) */
+@media screen and (max-width: 480px) {
+    .name {
+        font-size: 16px; 
+    }
+
+    .logout-button {
+        font-size: 10px; 
+        padding: 4px 8px; 
+    }
+
+    .username {
+        font-size: 12px;
+    }
+
+    .myfixed {
+        gap: 10px;
+    }
+
+    .cart img {
+        width: 18px;
+        height: 18px; 
+    }
+}
